@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed position Task</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        body > section {
+            height: 180px;
+            width: 180px;
+            border-radius: 100%;
+            position: absolute;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 22px;
+        }
+
+        body > section:nth-child(1) {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rebeccapurple;
+            display: inline-block;
+            margin-bottom: 120%;
+            margin-top: 25%;
+        }
+
+        body > section:nth-child(2) {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 65%;
+            background: #50cce2;
+        }
+
+        body > section:nth-child(3) {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            margin-top: 130%;
+            margin-bottom: 25%;
+            background: orangered;
+            display: inline-block;
+        }
+
+        /*body > div:nth-child(4) {
+            height: 220px;
+            width: 220px;
+            background-color: white;
+            border: 20px solid darkred;
+            opacity: 0.01;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }*/
+
+        nav {
+            height: 220px;
+            width: 220px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: 15px solid red;
+            color: white;
+        }
+
+        body > div {
+            height: 240px;
+            width: 240px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: 15px solid dodgerblue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<section><h2>Hello</h2></section>
+<section><h2>Welcome to</h2></section>
+<section><h2>Institute <br> of <br> Software Eng.</h2></section>
+<nav></nav>
+<div></div>
+</body>
+</html>
